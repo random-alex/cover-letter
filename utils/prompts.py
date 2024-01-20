@@ -1,4 +1,4 @@
-PROMPT_TEMPLATE = "{main_task_description}\nCV:\n{cv_info}\nJob description:\n{job_description}"
+PROMPT_TEMPLATE = "{main_task_description}\n==============*CV:*==============\n{cv_info}\n\n\n\n\n==============Job description:==============\n{job_description}"
 
 PROMPT_MAIN_TASK = """
 # Mission Overview
@@ -29,5 +29,6 @@ Before commencing with your evaluative response, it is imperative that you engag
  Write the cover letter form first view. Use I did, I completed, etc. Be precise and appealing.
 """
 
-PROMPT_CV = "extract structured information from the cv"
-PROMPT_JD = "extract structured information from job description"
+PROMPT_CV = "Extract structured information from the cv below."
+PROMPT_JD = ("Extract structured information from job description below."
+             " Focus on qualifications, skills, requirements, areas of expertise highlighted in job description")

@@ -10,13 +10,14 @@ def run_generation(api_key, jd_info, cv_pdf, cv_text):
     if not is_valid_api_key:
         raise gr.Error("API key is not valid! Please provide valid openAI API key")
     jd_info = jd_info.strip()
-    is_jd_url = is_valid_url(jd_info)
+    is_url_jd = is_valid_url(jd_info)
     is_pdf_cv = False
     cv = cv_text
-    if cv_pdf.name:
+
+    if cv_pdf and cv_pdf.name:
         is_pdf_cv = True
         cv = cv_pdf.name
-    letter = get_cover_letter_openai(cv=cv, job_description=jd_info, is_pdf_cv=is_pdf_cv, is_url_jd=is_jd_url,
+    letter = get_cover_letter_openai(cv_info=cv, job_description=jd_info, is_pdf_cv=is_pdf_cv, is_url_jd=is_url_jd,
                                      gpt_api_key=api_key)
     return letter
 
