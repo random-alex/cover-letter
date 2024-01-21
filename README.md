@@ -1,8 +1,21 @@
 # Automatic cover letter generation
 Simple app for generating cover letter based on CV and job description
-In order to use the app, please provider a valid OpenAI API key. Another note, generating cover letter could take some time(1-2 minutes) because of 
+In order to use the app, please provider a valid OpenAI API key. Another note, generating cover letter could take some time(1-2 minutes) because of multiple requests per one cover letter generation. 
+
+# How it works
+The overall app is very simple, but straightforward. Code structured in a modular way, making it very easy to extend the app to new use-case or improving it.
+All prompts stored in a separate file called `prompts.py` in `utils` folder.
+   <details>
+   <summary>Solution flow</summary>
+
+   ![schema.png](imgs/schema.png)
+
+   </details>
 
 # How to use solution 
+### Online Demo 
+You can simply use the Gradio demo [here](https://huggingface.co/spaces/random-alex1/cover-letter)
+
 ### Locally (CLI)
 1. Install the dependencies:
    
