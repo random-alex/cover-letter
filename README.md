@@ -1,9 +1,9 @@
-# Automatic cover letter generation
+# Automatic cover letter generator
 Simple app for generating cover letter based on CV and job description
 In order to use the app, please provider a valid OpenAI API key. Another note, generating cover letter could take some time(1-2 minutes) because of multiple requests per one cover letter generation. 
 
 # How it works
-The overall app is very simple, but straightforward. Code structured in a modular way, making it very easy to extend the app to new use-case or improving it.
+The overall app is simple, but straightforward. Code structured in a modular way, making it very easy to extend the app to new use-case or improving it.
 All prompts stored in a separate file called `prompts.py` in `utils` folder.
    <details>
    <summary>Solution flow</summary>
