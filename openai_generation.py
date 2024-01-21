@@ -16,11 +16,9 @@ def get_cover_letter_openai(cv_info: str, job_description: str, is_pdf_cv: bool,
     if is_pdf_cv:
         cv_info = get_structured_cv_info(cv_info=cv_info, is_pdf_cv=is_pdf_cv, model=model)
 
-    print(cv_info)
     if is_url_jd:
         job_description = get_structured_jd_info(job_description=job_description, is_url_jd=is_url_jd,
                                                  model=model)
-    print(job_description)
 
     prompt_final = PROMPT_TEMPLATE.format(main_task_description=PROMPT_MAIN_TASK, cv_info=cv_info,
                                           job_description=job_description)
