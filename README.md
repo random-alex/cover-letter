@@ -17,6 +17,8 @@ All prompts stored in a separate file called `prompts.py` in `utils` folder.
 You can simply use the Gradio demo [here](https://huggingface.co/spaces/random-alex1/cover-letter)
 
 ### Locally (CLI)
+0. Clone repo. Create venv. Activate it.
+
 1. Install the dependencies:
    
    `pip install -r requirements.txt`
@@ -25,6 +27,8 @@ You can simply use the Gradio demo [here](https://huggingface.co/spaces/random-a
    
     `python main.py --cv=test_assets/cvs/test_cv1.pdf --job_description='https://www.linkedin.com/jobs/view/3793239233/?alternateChannel=search&refId=9LsNBvo7h3zfuWe5C98kwQ%3D%3D&trackingId=LJyOI1ULOamcnhv9V6KXsw%3D%3D' --is_pdf_cv --is_url_jd`
 ### Locally (Gradio demo)
+0. Clone repo. Create venv. Activate it.
+
 1. Install the dependencies:
    
    `pip install -r requirements.txt`
