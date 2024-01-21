@@ -1,4 +1,4 @@
-# Automatic cover letter genetor
+# Automatic cover letter generator
 Simple app for generating cover letter based on CV and job description
 In order to use the app, please provider a valid OpenAI API key. Another note, generating cover letter could take some time(1-2 minutes) because of multiple requests per one cover letter generation. 
 
